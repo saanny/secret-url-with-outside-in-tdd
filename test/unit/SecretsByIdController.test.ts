@@ -1,6 +1,6 @@
 import { request, Request, response, Response } from "express";
-import { SecretsByIdController } from "../src/SecretsByIdController";
-import { UrlIdValidationError } from "../src/UrlIdValidationError";
+import { SecretsByIdController } from "../../src/rest/SecretsByIdController";
+import { UrlIdValidationError } from "../../src/UrlIdValidationError";
 
 describe("SecretsbyidController tests", () => {
 
