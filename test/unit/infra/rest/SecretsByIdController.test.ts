@@ -1,9 +1,10 @@
 import { request, Request, response, Response } from "express";
-import { SecretsByIdController } from "../../src/rest/SecretsByIdController";
-import { SecretNotFoundError } from "../../src/SecretNotFoundError";
-import { SecretRetriver } from "../../src/SecretRetriver";
-import { UrlId } from "../../src/UrlId";
-import { UrlIdValidationError } from "../../src/UrlIdValidationError";
+import { SecretNotFoundError } from "../../../../src/domain/errors/SecretNotFoundError";
+import { UrlIdValidationError } from "../../../../src/domain/errors/UrlIdValidationError";
+import { UrlId } from "../../../../src/domain/models/UrlId";
+import { SecretsByIdController } from "../../../../src/infra/rest/SecretsByIdController";
+import { SecretRetriver } from "../../../../src/services/SecretRetriver";
+
 
 describe("SecretsbyidController tests", () => {
 

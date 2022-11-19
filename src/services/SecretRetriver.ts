@@ -1,4 +1,4 @@
-import { Secret } from "./Secret";
+import { Secret } from "../domain/models/Secret";
 import { UrlId } from "./UrlId";
 
 export interface SecretRetriver {
